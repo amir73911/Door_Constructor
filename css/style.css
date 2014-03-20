@@ -1,0 +1,293 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+* {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: default;
+}
+body {
+  font-family: Arial;
+  background: url("../images/bg1.png");
+}
+.main {
+  width: 100%;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  background: url("../images/bg.jpg");
+  -webkit-box-shadow: 0 0 59px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 59px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 59px rgba(0, 0, 0, 0.75);
+}
+.main header {
+  text-align: center;
+  font: 30px 'ArnoPro-Display';
+  color: #514138;
+  text-transform: uppercase;
+  background: url("../images/head_bg.png") center bottom no-repeat;
+  padding: 35px 0;
+  margin-bottom: 35px;
+}
+.collections {
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+.collections .item,
+.collections .item > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.collections .item {
+  cursor: pointer;
+  margin-right: 35px;
+}
+.collections .item:first-child {
+  margin-left: 95px;
+}
+.collections .item .collect_img {
+  cursor: pointer;
+  background: url('../images/collect.png') no-repeat;
+  margin: 0 9px;
+}
+.collections .item .collect_name {
+  cursor: pointer;
+  font: 11px 'HeliosLight';
+  color: #5d4e48;
+  text-transform: uppercase;
+}
+.collections #collect-art_line .collect_img {
+  background-position: 0px 0px;
+  width: 31px;
+  height: 75px;
+}
+.collections #collect-classic .collect_img {
+  background-position: 0px -75px;
+  width: 31px;
+  height: 75px;
+}
+.collections #collect-diamond .collect_img {
+  background-position: 0px -150px;
+  width: 31px;
+  height: 75px;
+}
+.collections #collect-modern .collect_img {
+  background-position: 0px -225px;
+  width: 31px;
+  height: 75px;
+}
+.collections #collect-triniti .collect_img {
+  background-position: 0px -300px;
+  width: 31px;
+  height: 75px;
+}
+.collections #collect-art_line:hover .collect_img {
+  background-position: 0px -375px;
+  width: 30px;
+  height: 75px;
+  margin-right: 10px;
+}
+.collections #collect-classic:hover .collect_img {
+  background-position: 0px -450px;
+  width: 30px;
+  height: 75px;
+  margin-right: 10px;
+}
+.collections #collect-diamond:hover .collect_img {
+  background-position: 0px -525px;
+  width: 30px;
+  height: 74px;
+  margin-right: 10px;
+}
+.collections #collect-modern:hover .collect_img {
+  background-position: 0px -599px;
+  width: 30px;
+  height: 75px;
+  margin-right: 10px;
+}
+.collections #collect-triniti:hover .collect_img {
+  background-position: 0px -674px;
+  width: 30px;
+  height: 75px;
+  margin-right: 10px;
+}
+.collections .doors_in_collection {
+  display: none;
+  position: absolute;
+  top: 82px;
+  left: 50%;
+  z-index: 3;
+  font-size: 0;
+  text-align: center;
+  background: url("../images/door_in_collect_bg.png") center top no-repeat;
+  width: 1004px;
+  height: 267px;
+  padding-top: 25px;
+}
+.collections .doors_in_collection .door {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  filter: alpha(opacity=60);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.collections .doors_in_collection .door:hover {
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+}
+.collections .doors_in_collection .door .door_img {
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.collections .doors_in_collection .door .door_img i {
+  cursor: pointer;
+  display: inline-block;
+}
+.collections .doors_in_collection .door .door_name {
+  cursor: pointer;
+  color: #5d4e48;
+  font: 11px 'helioslight';
+  text-transform: uppercase;
+}
+.options {
+  font-size: 0;
+  margin: 0 auto 30px;
+  position: relative;
+  width: 1140px;
+  text-align: center;
+}
+.options .item {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  font: 12px/16px 'HeliosLight';
+  width: 180px;
+  padding: 0 25px;
+}
+.options .item:first-child {
+  margin-left: 50px;
+}
+.options .item .option_name {
+  color: #5d4e48;
+  margin-bottom: 5px;
+}
+.options .item .option_value {
+  display: inline;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px dashed #000;
+}
+.options .item .option_value:hover {
+  border: 0;
+}
+.options .item .variants {
+  display: none;
+  z-index: 2;
+  padding: 17px 10px 0;
+  position: absolute;
+  top: 45px;
+  left: 81px;
+  background: #fff;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 3px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 0;
+}
+.options .item .variants .variant_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 122px;
+}
+.options .item .variants .variant_item .variant_img {
+  cursor: pointer;
+  display: block;
+  width: 92px;
+  height: 92px;
+  margin: 0 15px;
+}
+.options .item .variants .variant_item .variant_value {
+  cursor: pointer;
+  font: 11px 'helioslight';
+  color: #5d4e48;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 18px 0;
+}
+.options .item .variants .variant_item.selected .variant_value {
+  color: #010101;
+}
+.constructor_container {
+  z-index: 1;
+  background: url("../images/const_bgs/1.jpg") center top no-repeat;
+  width: 978px;
+  height: 652px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.constructor_container .door_reflex {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  background: url("../images/door_reflex.png");
+  width: 227px;
+  height: 120px;
+  margin-left: -113px;
+}
+.constructor_container .wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 551px;
+}
+.constructor_container .floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 101px;
+}
+.constructor_container .door {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 101px;
+  -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}

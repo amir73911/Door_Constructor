@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "collection_id": 5,
+        "code": "triniti_001",
+        "name": "Тринити 001",
+        "variant" : [
+            {"wood" : 1, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/silver_oak/blind/door_small.jpg"},
+            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/black_oak/blind/door_small.jpg"},
+            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/white_oak/blind/door_small.jpg"}
+        ]
+    },
+    {
+        "id": 2,
+        "collection_id": 5,
+        "code": "triniti_002",
+        "name": "Тринити 002",
+        "variant" : [
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/silver_oak/white_glass/door.jpg"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/black_oak/white_glass/door.jpg"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/white_glass/door.jpg"},
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/black_glass/door.jpg"}
+        ]
+    },
+    {
+        "id": 3,
+        "collection_id": 5,
+        "code": "triniti_003",
+        "name": "Тринити 003"
+    },
+    {
+        "id": 4,
+        "collection_id": 5,
+        "code": "triniti_004",
+        "name": "Тринити 004",
+        "variant" : [
+            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/black_oak/blind/door.jpg"},
+            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/white_oak/blind/door.jpg"}
+        ]
+    },
+    {
+        "id": 5,
+        "collection_id": 5,
+        "code": "triniti_005",
+        "name": "Тринити 005"
+    },
+    {
+        "id": 6,
+        "collection_id": 5,
+        "code": "triniti_006",
+        "name": "Тринити 006"
+    },
+    {
+        "id": 7,
+        "collection_id": 5,
+        "code": "triniti_007",
+        "name": "Тринити 007"
+    },
+    {
+        "id": 8,
+        "collection_id": 5,
+        "code": "triniti_008",
+        "name": "Тринити 008"
+    },
+    {
+        "id": 11,
+        "collection_id": 5,
+        "code": "triniti_011",
+        "name": "Тринити 011"
+    }
+]

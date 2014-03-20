@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'ArnoPro-Display';
+    src: url('fonts/ArnoPro-Display.eot');
+    src: local('☺'),
+        url('fonts/ArnoPro-Display.woff') format('woff'),
+        url('fonts/ArnoPro-Display.ttf') format('truetype'),
+        url('fonts/ArnoPro-Display.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeliosLightC';
+    src: url('fonts/HeliosLightC.eot');
+    src: local('☺'),
+        url('fonts/HeliosLightC.woff') format('woff'),
+        url('fonts/HeliosLightC.ttf') format('truetype'),
+        url('fonts/HeliosLightC.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HeliosLight';
+    src: url('fonts/helioslight.eot');
+    src: url('fonts/helioslight.eot') format('embedded-opentype'),
+    url('fonts/helioslight.woff') format('woff'),
+    url('fonts/helioslight.ttf') format('truetype'),
+    url('fonts/helioslight.svg#HeliosLightLight') format('svg');
+}
+
+

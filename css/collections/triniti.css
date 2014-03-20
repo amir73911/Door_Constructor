@@ -1,0 +1,21 @@
+#triniti_007 i,
+#triniti_001 i,
+#triniti_002 i,
+#triniti_003 i,
+#triniti_004 i,
+#triniti_005 i,
+#triniti_006 i,
+#triniti_008 i,
+#triniti_011 i {
+    background: url('../../images/triniti.png') no-repeat;
+}
+
+#triniti_001 i { background-position: -0px -100px; width: 41px; height: 100px; }
+#triniti_002 i { background-position: -0px -200px; width: 41px; height: 100px; }
+#triniti_003 i { background-position: -0px -300px; width: 41px; height: 100px; }
+#triniti_004 i { background-position: -0px -400px; width: 41px; height: 100px; }
+#triniti_005 i { background-position: -0px -500px; width: 41px; height: 100px; }
+#triniti_006 i { background-position: -0px -600px; width: 41px; height: 100px; }
+#triniti_007 i { background-position: -0px -0px; width: 66px; height: 100px; }
+#triniti_008 i { background-position: -0px -700px; width: 41px; height: 100px; }
+#triniti_011 i { background-position: -0px -800px; width: 41px; height: 100px; }

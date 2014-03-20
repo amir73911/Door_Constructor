@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "code": "blind",
+        "name": "Глухая"
+    },
+    {
+        "id": 1,
+        "code": "black",
+        "name": "Черное стекло"
+    },
+    {
+        "id": 2,
+        "code": "white",
+        "name": "Белое стекло"
+    },
+    {
+        "id": 3,
+        "code": "bronze",
+        "name": "Бронзовое стекло"
+    },
+    {
+        "id": 4,
+        "code": "mirror",
+        "name": "Зеркало"
+    },
+    {
+        "id": 5,
+        "code": "fotoprint",
+        "name": "Фотопечать"
+    }
+]

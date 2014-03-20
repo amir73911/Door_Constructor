@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "code": "diamond",
+        "name": "Diamond"
+    },
+    {
+        "id": 2,
+        "code": "art_line",
+        "name": "Art-Line"
+    },
+    {
+        "id": 3,
+        "code": "modern",
+        "name": "Modern"
+    },
+    {
+        "id": 4,
+        "code": "classic",
+        "name": "Классика"
+    },
+    {
+        "id": 5,
+        "code": "triniti",
+        "name": "Тринити"
+    }
+]

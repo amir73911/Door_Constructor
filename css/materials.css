@@ -1,0 +1,13 @@
+/* стекло */
+.glass .variant_img {background: url('../images/glasses.png') no-repeat;}
+.glass #black .variant_img{ background-position: -0px -0px;}
+.glass #bronze .variant_img{ background-position: -92px -0px;}
+.glass #fotoprint .variant_img{ background-position: -0px -92px;}
+.glass #mirror .variant_img{ background-position: -92px -92px;}
+.glass #white .variant_img{ background-position: -0px -184px;}
+
+/* дерево */
+.wood .variant_img {background: url('../images/woods.png') no-repeat;}
+.wood #black_oak .variant_img{ background-position: -0px -0px;}
+.wood #silver_oak .variant_img{ background-position: -0px -92px;}
+.wood #white_oak .variant_img{ background-position: -0px -184px;}
