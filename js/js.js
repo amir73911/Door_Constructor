@@ -1,5 +1,5 @@
 $(function(){
-    doors_in_collection_to_center();
+    //doors_in_collection_to_center();
 });
 
 function doors_in_collection_to_center() {

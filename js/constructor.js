@@ -166,17 +166,7 @@ function loadDoorOptions(filteredData) {
 
     //var door_img_src = 'doors_collections/'+collect_name+'/'+door_data[0].code+'/';
 
-
-    var img = new Image();
-    img.src = door_data.variant[0].path;
-    img.onload = function() {
-        $('.constructor_container .door').css({
-                'width': this.width,
-                'height': this.height,
-                'marginLeft': -this.width/2,
-                'background': 'url("'+img.src+'")'
-            }).fadeIn(300);
-    };
+    loadDoorImage(door_data.variant[0].path);
 }
 
 function loadDoorImage(path) {
