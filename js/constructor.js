@@ -51,14 +51,18 @@ function loadCollectionPreview(collect_name) {
         filteredData = _.filter(selected_door_data, function(item) {
             return item.code == door_name;
         });
-
         if(filteredData[0].variant){loadDoorOptions(filteredData[0]);}
         $('.doors_in_collection').fadeOut();
-    }).fadeIn();
+    });
 
 }
 
-function loadDoorOptions(door_data) {
+function loadDoorOptions(filteredData) {
+
+    var door_data = filteredData;
+
+
+
 
     var woods_ids = _.uniq(_.pluck(door_data.variant, 'wood')); // доступные типы шпона для выбранной двери [1,2,3]
     var glass_ids = _.uniq(_.pluck(door_data.variant, 'glass')); // доступные типы остекления для выбранной двери [1,2,3]
@@ -136,6 +140,7 @@ function loadDoorOptions(door_data) {
     });
 
 
+    window.selected_door_code = door_data;
     $('.variants').on('click', '.variant_item', function(){
         $('.variants').fadeOut();
         var this_variant_item = $(this);
@@ -147,12 +152,12 @@ function loadDoorOptions(door_data) {
 
         var a = [];
         var b = {};
-        $.each($('.variant_item.selected'), function (i, item) {
+        $.each($('.variant_item.selected'), function () {
             a.push($(this).data('id'));
         });
         b = _.object(['wood', 'glass', 'form'], a);
 
-        var filterData = _.where(door_data.variant, b);
+        var filterData = _.where(selected_door_code.variant, b);
         loadDoorImage(filterData[0].path);
 
     });
