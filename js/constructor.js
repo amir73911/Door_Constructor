@@ -16,7 +16,7 @@ function loadCollections() {
         });
     });
 
-    $('.collections').on('click', '.item', function(){
+    $('.collections').on('click tap', '.item', function(){
         loadCollectionPreview(this.id);
         $('.variants').fadeOut();
     });
@@ -45,7 +45,7 @@ function loadCollectionPreview(collect_name) {
         $('.doors_in_collection').fadeOut();
     });
 
-    $('.doors_in_collection').on('click', '.door', function(){
+    $('.doors_in_collection').on('click tap', '.door', function(){
         var door_name = this.id;
         var filteredData = [];
         filteredData = _.filter(selected_door_data, function(item) {
@@ -141,7 +141,7 @@ function loadDoorOptions(filteredData) {
 
 
     window.selected_door_code = door_data;
-    $('.variants').on('click', '.variant_item', function(){
+    $('.variants').on('click tap', '.variant_item', function(){
         $('.variants').fadeOut();
         var this_variant_item = $(this);
         var all_variant_items = $('.variant_item');
