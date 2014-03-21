@@ -146,9 +146,12 @@ function loadDoorOptions(filteredData) {
         var this_variant_item = $(this);
         var all_variant_items = $('.variant_item');
         var in_variant_items = $(this).parents('.variants').find('.variant_item');
+        var option_value = $(this).parents('.item').find('.option_value');
 
         in_variant_items.removeClass('selected');
         this_variant_item.addClass('selected');
+        option_value.html(this_variant_item.find('.variant_value').html())
+        console.log(this_variant_item)
 
         var a = [];
         var b = {};
