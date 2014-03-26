@@ -4,7 +4,6 @@ $(function(){
     loadCollections();
 
     loadInteriorLoader();
-
 });
 
 function doors_in_collection_to_center() {

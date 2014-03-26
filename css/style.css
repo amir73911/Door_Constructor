@@ -367,35 +367,12 @@ body {
 }
 .constructor_container {
   z-index: 1;
-  background: url("../images/const_bgs/1.jpg") center top no-repeat;
   max-width: 978px;
   height: 652px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-}
-.constructor_container .door_reflex {
-  position: absolute;
-  bottom: -120px;
-  left: 50%;
-  background: url("../images/door_reflex.png");
-  width: 227px;
-  height: 120px;
-  margin-left: -113px;
-}
-.constructor_container .wall {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 551px;
-}
-.constructor_container .floor {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 101px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzVGQ0QzMzlCNEJDMTFFMzlGODJBMDFFRDc2OThERkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzVGQ0QzM0FCNEJDMTFFMzlGODJBMDFFRDc2OThERkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NUZDRDMzN0I0QkMxMUUzOUY4MkEwMUVENzY5OERGQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NUZDRDMzOEI0QkMxMUUzOUY4MkEwMUVENzY5OERGQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr6y/bAAAAAPSURBVHjaYmJgYGgACDAAAI8Ag+R3NvwAAAAASUVORK5CYII=");
 }
 .constructor_container .door {
   display: none;
@@ -407,14 +384,140 @@ body {
   box-shadow: -3px 0 4px rgba(0, 0, 0, 0.4);
   z-index: 2;
 }
+.constructor_container .interior {
+  background: url("../images/const_bgs/1.jpg") center top no-repeat;
+  height: 100%;
+  position: relative;
+}
+.constructor_container .interior .door_reflex {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  background: url("../images/door_reflex.png");
+  width: 227px;
+  height: 120px;
+  margin-left: -113px;
+}
+.constructor_container .interior .wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 551px;
+}
+.constructor_container .interior .floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 101px;
+}
 .constructor_container .uploaded_interior {
   position: absolute;
-  display: none;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.constructor_container .uploaded_interior .load_img {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -489px;
+  width: 100%;
+  height: 100%;
   background-position: center top !important;
   background-repeat: no-repeat !important;
-  background-size: cover !important;
+  background-size: contain !important;
+}
+.constructor_container .uploaded_interior .load_img.dragging {
+  cursor: move;
+}
+.constructor_container .uploaded_interior .substrate .substrate_back {
+  z-index: 5;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzVGQ0QzMzlCNEJDMTFFMzlGODJBMDFFRDc2OThERkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzVGQ0QzM0FCNEJDMTFFMzlGODJBMDFFRDc2OThERkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NUZDRDMzN0I0QkMxMUUzOUY4MkEwMUVENzY5OERGQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NUZDRDMzOEI0QkMxMUUzOUY4MkEwMUVENzY5OERGQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr6y/bAAAAAPSURBVHjaYmJgYGgACDAAAI8Ag+R3NvwAAAAASUVORK5CYII=");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.constructor_container .uploaded_interior .substrate .substrate_door {
+  z-index: 6;
+  background: url("../images/substrate_door.png") no-repeat;
+  width: 189px;
+  height: 457px;
+  position: absolute;
+  left: 50%;
+  top: 95px;
+  margin-left: -95px;
+}
+.constructor_container .uploaded_interior .substrate .buttons {
+  z-index: 6;
+  position: absolute;
+  left: 50%;
+  top: 585px;
+  margin-left: -132px;
+  font-size: 0;
+}
+.constructor_container .uploaded_interior .substrate .buttons a {
+  display: inline-block;
+  font: 14px 'helioslight';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.constructor_container .uploaded_interior .substrate .buttons a:first-child {
+  margin-right: 40px;
+}
+.constructor_container .uploaded_interior .substrate .controls {
+  z-index: 6;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+.constructor_container .uploaded_interior .substrate .controls .control {
+  text-align: center;
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.constructor_container .uploaded_interior .substrate .controls .control:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+.constructor_container .uploaded_interior .substrate .controls .control i {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../images/controls.png') no-repeat;
+}
+.constructor_container .uploaded_interior .substrate .controls .drag i {
+  background-position: 0px 0px;
+  width: 44px;
+  height: 44px;
+}
+.constructor_container .uploaded_interior .substrate .controls .rotate_left i {
+  background-position: 0px -44px;
+  width: 25px;
+  height: 22px;
+}
+.constructor_container .uploaded_interior .substrate .controls .rotate_right i {
+  background-position: 0px -66px;
+  width: 25px;
+  height: 22px;
+}
+.constructor_container .uploaded_interior .substrate .controls .scale_minus i {
+  background-position: 0px -88px;
+  width: 22px;
+  height: 5px;
+}
+.constructor_container .uploaded_interior .substrate .controls .scale_plus i {
+  background-position: -22px -88px;
+  width: 22px;
+  height: 22px;
 }

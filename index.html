@@ -19,7 +19,10 @@
 
     <!--[if IE]> <script src="js/html5.js"></script><![endif]-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
     <script src="js/underscore-min.js"></script>
+    <script src="js/jqueryrotate.js"></script>
     <script src="js/jquery.tap.js"></script>
     <script src="js/constructor.js"></script>
     <script src="js/interior_loader.js"></script>
@@ -69,9 +72,28 @@
         </div>
         <div class="constructor_container">
             <div class="door"><div class="door_reflex"></div></div>
-            <div class="wall"></div>
-            <div class="floor"></div>
-            <div class="uploaded_interior"></div>
+            <div class="interior">
+                <div class="wall"></div>
+                <div class="floor"></div>
+            </div>
+            <div class="uploaded_interior">
+                <div class="load_img"></div>
+                <div class="substrate">
+                    <div class="substrate_back"></div>
+                    <div class="substrate_door"></div>
+                    <div class="buttons">
+                        <a href="#" class="new_load_int">Другое фото</a>
+                        <a href="#" class="save_loaded_int">Сохранить</a>
+                    </div>
+                    <div class="controls">
+                        <div class="scale_plus control"><i></i></div>
+                        <div class="scale_minus control"><i></i></div>
+                        <div class="drag control"><i></i></div>
+                        <div class="rotate_right control"><i></i></div>
+                        <div class="rotate_left control"><i></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

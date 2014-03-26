@@ -18,12 +18,18 @@ function loadInteriorLoader() {
         files = $(this)[0].files;
         // Передаем массив с файлами в функцию загрузки на предпросмотр
         loadInView(files);
+        $('.interior').hide();
+    });
+
+    $('.save_loaded_int').on('click', function(e){
+        $('.uploaded_interior .substrate').fadeOut();
+        e.preventDefault();
     });
 
     // Функция загрузки изображений на предросмотр
     function loadInView(files) {
         // Показываем обасть предпросмотра
-        $('.uploaded_interior').removeAttr("style").show();
+        $('.uploaded_interior').removeAttr("style").fadeIn();
 
         // Для каждого файла
         $.each(files, function(index, file) {
@@ -80,9 +86,59 @@ function loadInteriorLoader() {
         // Цикл для каждого элемента массива
         for (i = start; i < end; i++) {
             // размещаем загруженные изображения
-            $('.uploaded_interior').css({'background': 'url('+dataArray[i].value+')'});
+            $('.load_img').css({'background': 'url('+dataArray[i].value+')'});
         }
+        interiorLoaderControls();
         return false;
     }
 
+}
+
+function interiorLoaderControls() {
+
+    var scale_step = 10;
+    var rotate_step = 1;
+    var angle = 0;
+
+    var target = $('.load_img');
+    var t_width = target.width();
+    var t_height = target.height();
+    var scale_plus = $('.scale_plus');
+    var scale_minus = $('.scale_minus');
+    var rotate_left = $('.rotate_left');
+    var rotate_right = $('.rotate_right');
+    var drag = $('.drag');
+
+    target.rotate({angle: 0})
+
+    scale_plus.on('click', function(){
+        target.width(t_width + scale_step);
+        target.height(t_height + scale_step);
+        t_width = target.width();
+        t_height = target.height();
+        target.css('margin-left', -t_width/2+'px');
+    });
+
+    scale_minus.on('click', function(){
+        target.width(t_width - scale_step);
+        target.height(t_height - scale_step);
+        t_width = target.width();
+        t_height = target.height();
+        target.css('margin-left', -t_width/2+'px');
+    });
+
+    rotate_left.on('click', function(){
+        angle = angle - rotate_step;
+        target.rotate({angle: angle})
+    });
+
+    rotate_right.on('click', function(){
+        angle = angle + rotate_step;
+        target.rotate({angle: angle})
+    });
+    drag.on('click', function(){
+        $('.substrate_back').hide();
+        $('.load_img').toggleClass('dragging');
+        $('.load_img.dragging').draggable();
+    });
 }
