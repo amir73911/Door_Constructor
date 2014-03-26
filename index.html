@@ -22,6 +22,7 @@
     <script src="js/underscore-min.js"></script>
     <script src="js/jquery.tap.js"></script>
     <script src="js/constructor.js"></script>
+    <script src="js/interior_loader.js"></script>
     <script src="js/js.js"></script>
 
     <title>Door Constructor</title>
@@ -52,6 +53,10 @@
             <div class="item">
                 <div class="option_name">Интерьер:</div>
                 <div class="option_value">не выбран</div>
+                <div class="load_interior">
+                    <span>Загрузить свой интерьер</span>
+                    <input type="file" id="uploadbtn" accept="image/*"/>
+                </div>
             </div>
             <div class="item">
                 <div class="option_name">Цвет стен:</div>
@@ -66,6 +71,7 @@
             <div class="door"><div class="door_reflex"></div></div>
             <div class="wall"></div>
             <div class="floor"></div>
+            <div class="uploaded_interior"></div>
         </div>
     </div>
 </body>

@@ -1,5 +1,10 @@
 $(function(){
     //doors_in_collection_to_center();
+
+    loadCollections();
+
+    loadInteriorLoader();
+
 });
 
 function doors_in_collection_to_center() {

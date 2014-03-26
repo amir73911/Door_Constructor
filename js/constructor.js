@@ -1,10 +1,3 @@
-$(function(){
-
-    loadCollections();
-
-
-});
-
 function loadCollections() {
     $.getJSON('js/database/collections.json', function(json) {
         $.each(json, function (i, collection) {
