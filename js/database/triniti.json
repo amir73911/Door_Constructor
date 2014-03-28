@@ -5,9 +5,14 @@
         "code": "triniti_001",
         "name": "Тринити 001",
         "variant" : [
-            {"wood" : 1, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/silver_oak/blind/door_small.jpg"},
-            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/black_oak/blind/door_small.jpg"},
-            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/white_oak/blind/door_small.jpg"}
+            {"wood" : 1, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/silver_oak/blind/door.png"},
+            {"wood" : 1, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_001/silver_oak/blind/door2.png"},
+
+            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/black_oak/blind/door.png"},
+            {"wood" : 2, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_001/black_oak/blind/door2.png"},
+
+            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_001/white_oak/blind/door.png"},
+            {"wood" : 3, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_001/white_oak/blind/door2.png"}
         ]
     },
     {
@@ -16,17 +21,44 @@
         "code": "triniti_002",
         "name": "Тринити 002",
         "variant" : [
-            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/silver_oak/white_glass/door.jpg"},
-            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/black_oak/white_glass/door.jpg"},
-            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/white_glass/door.jpg"},
-            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/black_glass/door.jpg"}
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_002/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_002/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_002/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_002/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_002/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_002/black_oak/white_glass/door2.png"},
+
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_002/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_002/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_002/white_oak/white_glass/door2.png"}
         ]
     },
     {
         "id": 3,
         "collection_id": 5,
         "code": "triniti_003",
-        "name": "Тринити 003"
+        "name": "Тринити 003",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_003/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_003/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_003/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_003/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_003/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_003/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_003/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_003/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_003/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_003/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_003/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_003/white_oak/white_glass/door2.png"}
+        ]
     },
     {
         "id": 4,
@@ -34,38 +66,124 @@
         "code": "triniti_004",
         "name": "Тринити 004",
         "variant" : [
-            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/black_oak/blind/door.jpg"},
-            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/white_oak/blind/door.jpg"}
+            {"wood" : 1, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/silver_oak/blind/door.png"},
+            {"wood" : 1, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_004/silver_oak/blind/door2.png"},
+
+            {"wood" : 2, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/black_oak/blind/door.png"},
+            {"wood" : 2, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_004/black_oak/blind/door2.png"},
+
+            {"wood" : 3, "glass" : 0, "form" : 1, "path" : "doors_collections/triniti/triniti_004/white_oak/blind/door.png"},
+            {"wood" : 3, "glass" : 0, "form" : 2, "path" : "doors_collections/triniti/triniti_004/white_oak/blind/door2.png"}
         ]
     },
     {
         "id": 5,
         "collection_id": 5,
         "code": "triniti_005",
-        "name": "Тринити 005"
+        "name": "Тринити 005",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_005/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_005/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_005/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_005/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_005/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_005/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_005/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_005/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_005/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_005/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_005/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_005/white_oak/white_glass/door2.png"}
+        ]
     },
     {
         "id": 6,
         "collection_id": 5,
         "code": "triniti_006",
-        "name": "Тринити 006"
+        "name": "Тринити 006",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_006/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_006/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_006/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_006/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_006/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_006/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_006/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_006/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_006/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_006/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_006/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_006/white_oak/white_glass/door2.png"}
+        ]
     },
     {
         "id": 7,
         "collection_id": 5,
         "code": "triniti_007",
-        "name": "Тринити 007"
+        "name": "Тринити 007",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_007/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_007/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_007/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_007/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_007/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_007/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_007/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_007/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_007/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_007/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_007/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_007/white_oak/white_glass/door2.png"}
+        ]
     },
     {
         "id": 8,
         "collection_id": 5,
         "code": "triniti_008",
-        "name": "Тринити 008"
+        "name": "Тринити 008",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_008/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_008/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_008/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_008/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_008/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_008/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_008/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_008/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_008/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_008/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_008/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_008/white_oak/white_glass/door2.png"}
+        ]
     },
     {
         "id": 11,
         "collection_id": 5,
         "code": "triniti_011",
-        "name": "Тринити 011"
+        "name": "Тринити 011",
+        "variant" : [
+            {"wood" : 1, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_011/silver_oak/black_glass/door.png"},
+            {"wood" : 1, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_011/silver_oak/black_glass/door2.png"},
+            {"wood" : 1, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_011/silver_oak/white_glass/door.png"},
+            {"wood" : 1, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_011/silver_oak/white_glass/door2.png"},
+
+            {"wood" : 2, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_011/black_oak/black_glass/door.png"},
+            {"wood" : 2, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_011/black_oak/black_glass/door2.png"},
+            {"wood" : 2, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_011/black_oak/white_glass/door.png"},
+            {"wood" : 2, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_011/black_oak/white_glass/door2.png"},
+
+            {"wood" : 3, "glass" : 1, "form" : 1, "path" : "doors_collections/triniti/triniti_011/white_oak/black_glass/door.png"},
+            {"wood" : 3, "glass" : 1, "form" : 2, "path" : "doors_collections/triniti/triniti_011/white_oak/black_glass/door2.png"},
+            {"wood" : 3, "glass" : 2, "form" : 1, "path" : "doors_collections/triniti/triniti_011/white_oak/white_glass/door.png"},
+            {"wood" : 3, "glass" : 2, "form" : 2, "path" : "doors_collections/triniti/triniti_011/white_oak/white_glass/door2.png"}
+        ]
     }
 ]
