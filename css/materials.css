@@ -11,3 +11,10 @@
 .wood #black_oak .variant_img{ background-position: -0px -0px;}
 .wood #silver_oak .variant_img{ background-position: -0px -92px;}
 .wood #white_oak .variant_img{ background-position: -0px -184px;}
+
+/* forms */
+.form .variant_img { background: url('../images/forms.png') no-repeat; margin: 0 auto !important;}
+
+.form #str2 .variant_img { background-position: -0px -0px; width: 76px; height: 93px; }
+.form #str1-5 .variant_img { background-position: -0px -93px; width: 66px; height: 93px; }
+.form #str1 .variant_img { background-position: -0px -186px; width: 38px; height: 93px; }
