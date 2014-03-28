@@ -9,8 +9,8 @@ function loadCollections() {
         });
     });
 
-    $('.collections').on('click tap', '.item', function(){
-        loadCollectionPreview(this.id);
+    $('.collections').on('click tap', '.item#collect-triniti', function(){
+        var a = loadCollectionPreview(this.id);
         $('.variants').fadeOut();
     });
 }
@@ -53,9 +53,6 @@ function loadCollectionPreview(collect_name) {
 function loadDoorOptions(filteredData) {
 
     var door_data = filteredData;
-
-
-
 
     var woods_ids = _.uniq(_.pluck(door_data.variant, 'wood')); // доступные типы шпона для выбранной двери [1,2,3]
     var glass_ids = _.uniq(_.pluck(door_data.variant, 'glass')); // доступные типы остекления для выбранной двери [1,2,3]

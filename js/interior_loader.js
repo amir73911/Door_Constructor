@@ -19,10 +19,12 @@ function loadInteriorLoader() {
         // Передаем массив с файлами в функцию загрузки на предпросмотр
         loadInView(files);
         $('.interior').hide();
+        $('.constructor_container .door').css('z-index', 2);
+        $('.interior_opt .option_value').html('Свой')
     });
 
-    $('.save_loaded_int').on('click', function(e){
-        $('.uploaded_interior .substrate').fadeOut();
+    $('.new_load_int').on('click', function(e){
+        defaultUploadBtn.click();
         e.preventDefault();
     });
 
@@ -30,6 +32,8 @@ function loadInteriorLoader() {
     function loadInView(files) {
         // Показываем обасть предпросмотра
         $('.uploaded_interior').removeAttr("style").fadeIn();
+        $('.uploaded_interior .substrate').fadeIn();
+        $('.substrate_back').fadeIn();
 
         // Для каждого файла
         $.each(files, function(index, file) {
@@ -109,6 +113,9 @@ function interiorLoaderControls() {
     var rotate_right = $('.rotate_right');
     var drag = $('.drag');
 
+    var draging = true;
+    var back = $('.substrate_back');
+
     target.rotate({angle: 0})
 
     scale_plus.on('click', function(){
@@ -136,9 +143,24 @@ function interiorLoaderControls() {
         angle = angle + rotate_step;
         target.rotate({angle: angle})
     });
+
+    target.addClass('dragging').draggable();
     drag.on('click', function(){
-        $('.substrate_back').hide();
-        $('.load_img').toggleClass('dragging');
-        $('.load_img.dragging').draggable();
+
+        if (draging) {
+            back.fadeOut();
+            draging = false;
+        } else if (!draging) {
+            back.fadeIn();
+            draging = true;
+        }
+    });
+
+    $('.save_loaded_int').on('click', function(e){
+        $('.uploaded_interior .substrate').fadeOut();
+        target.removeClass('dragging').draggable('destroy');
+        draging = true;
+        $('.constructor_container .door').css('z-index', 4);
+        e.preventDefault();
     });
 }
